@@ -42,3 +42,19 @@ def tag(sentence):
             tagged.append(token + "\\en")
 
     return " ".join(tagged)
+
+
+def collect(sentence):
+
+    model = load_model('model.h5')
+    tokens = word_tokenize(sentence)
+
+    bn_words, en_words = [], []
+    for token in tokens:
+        enc = np.array([encode(token)])
+        if roundup(model.predict(enc)[0]) == 0:
+            bn_words.append(token)
+        else:
+            en_words.append(token)
+
+    return bn_words, en_words
