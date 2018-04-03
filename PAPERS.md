@@ -18,6 +18,6 @@
 
 * [Text normalization in code-mixed social media text - 2015](http://ieeexplore.ieee.org/abstract/document/7232908/)
 
-# Miscellaneous
+## Miscellaneous
 
 * [Identifying Bengali Multiword Expressions using Semantic Clustering - 2014](https://arxiv.org/abs/1401.6122)
