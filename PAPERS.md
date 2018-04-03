@@ -8,6 +8,8 @@
 
 ### Language Tagging
 
+* [Language Identification of Bengali-English Code-Mixed data using Character & Phonetic based LSTM Models - 2018](https://arxiv.org/abs/1803.03859) 
+
 ### Sentiment Analysis
 
 ### Normalization
