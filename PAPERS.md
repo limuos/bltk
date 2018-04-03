@@ -1,14 +1,11 @@
-# Bengali Language Toolkit (BLTK)
-Bengali language toolkit
+# Collection of Bengali NLP Research Papers 
 
-## About
+## Sentiment Analysis
 
-The Bengali Language Toolkit (BLTK) offers natural language processing (NLP) support for the Indo-Aryan language Bengali and Bengali-English code-mixed data. The goals of BLTK are to:
+## Machine Translation
 
-*   provide pre-processing modules for Bengali data.
-*   provide core-nlp modules for Bengali data.
-*   provide corporas and lexicons for Bengali NLP.
+## Code-Mixing
 
-## Contributing
+### Language Tagging
 
-For contributions, drop a mail specifying the problem you want to adress at soumil.mandal@outlook.com.
+### Sentiment Analysis
