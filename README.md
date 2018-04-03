@@ -8,3 +8,7 @@ The Bengali Language Toolkit (BLTK) offers natural language processing (NLP) sup
 *   provide pre-processing modules for Bengali data.
 *   provide core-nlp modules for Bengali data.
 *   provide corporas and lexicons for Bengali NLP.
+
+## Contributing
+
+For contributions, drop a mail specifying the problem you want to adress at soumil.mandal@outlook.com.
