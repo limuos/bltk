@@ -2,7 +2,7 @@ from googletrans import Translator
 import re
 
 
-def g_transliterate(word):
+def g_pronounce(word):
 
     translator = Translator()
 
