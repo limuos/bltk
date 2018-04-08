@@ -11,4 +11,4 @@ The Bengali Language Toolkit (BLTK) offers natural language processing (NLP) sup
 
 ## Contributing
 
-For contributions, drop a mail specifying the problem you want to adress at soumil.mandal@outlook.com.
+For contributions, drop a mail specifying the problem you want to adress at soumil.mandal@gmail.com.
