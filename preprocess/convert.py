@@ -1,3 +1,15 @@
+from googletrans import Translator
+import re
+
+
+def g_transliterate(word):
+
+    translator = Translator()
+
+    beng = translator.translate(word.strip(), dest="en")
+    return str(re.findall("pronunciation=.*", str(beng))[0][:-1].split("=")[1]).lower()
+
+
 def phonetic2roman(word):
     
     chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g',
