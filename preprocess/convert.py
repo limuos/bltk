@@ -15,8 +15,8 @@ def ITRANS(word):
 
     output = sanscript.transliterate(word, sanscript.BENGALI, sanscript.ITRANS)
     output = (output.lower()).replace('য়', 'y')
-    output = output.replace('~', '')
     output = output.replace('ৎ', 't')
+    output = output.replace('~', '')
 
     return output
 
