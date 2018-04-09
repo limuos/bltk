@@ -3,7 +3,7 @@ from indic_transliteration import sanscript
 import re
 
 
-def g_pronounce(word):
+def NLK(word):
 
     translator = Translator()
 
