@@ -1,4 +1,5 @@
 from googletrans import Translator
+from indic_transliteration import sanscript
 import re
 
 
@@ -8,6 +9,16 @@ def g_pronounce(word):
 
     beng = translator.translate(word.strip(), dest="en")
     return str(re.findall("pronunciation=.*", str(beng))[0][:-1].split("=")[1]).lower()
+
+
+def ITRANS(word):
+
+    output = sanscript.transliterate(word, sanscript.BENGALI, sanscript.ITRANS)
+    output = (output.lower()).replace('য়', 'y')
+    output = output.replace('~', '')
+    output = output.replace('ৎ', 't')
+
+    return output
 
 
 def phonetic2roman(word):
