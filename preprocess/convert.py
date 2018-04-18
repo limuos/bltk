@@ -50,3 +50,11 @@ def phonetic2roman(word):
             else:
                 pass
     return "".join(roman)
+
+
+def phonetic_normalize(word):
+	return normalized
+
+
+def phonetic_de_normalized(word):
+	return de_normalized
