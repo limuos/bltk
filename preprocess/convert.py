@@ -11,16 +11,22 @@ def NLK(word):
     return str(re.findall("pronunciation=.*", str(beng))[0][:-1].split("=")[1]).lower()
 
 
-def ITRANS(word):
+def bn_ITRANS(word):
 
     output = sanscript.transliterate(word, sanscript.BENGALI, sanscript.ITRANS)
-    output = (output.lower()).replace('য়', 'y')
+    output = output.replace('য়', 'y')
     output = output.replace('~', '')
     output = output.replace('ৎ', 't')
     output = output.replace('.', '')
     output = output.replace('়', '')
 
-    return output
+    return output.lower()
+
+
+def hn_ITRANS(word):
+
+    output = sanscript.transliterate(word, sanscript.DEVANAGARI, sanscript.ITRANS)
+    return output.lower()
 
 
 def phonetic2roman(word):
