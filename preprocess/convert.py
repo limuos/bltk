@@ -23,9 +23,67 @@ def bn_ITRANS(word):
     return output.lower()
 
 
-def hn_ITRANS(word):
+def hi_ITRANS(word):
 
     output = sanscript.transliterate(word, sanscript.DEVANAGARI, sanscript.ITRANS)
+    return output.lower()
+
+
+def ka_ITRANS(word):
+
+    output = sanscript.transliterate(word, sanscript.KANNADA, sanscript.ITRANS)
+    output = output.replace('ಒ', 'o')
+    output = output.replace('ಎ', 'e')
+    output = output.replace('ೊ', 'o')
+    output = output.replace('~', '')
+    output = output.replace('ೆ', '')
+
+    return output.lower()
+
+
+def ma_ITRANS(word):
+
+    output = sanscript.transliterate(word, sanscript.MALAYALAM, sanscript.ITRANS)
+    output = output.replace('റ', 'ra')
+    output = output.replace('ൻ', 'n')
+    output = output.replace('ൽ', 'l')
+    output = output.replace('െ', 'e')
+    output = output.replace('ർ', 'r')
+    output = output.replace('ൗ', 'u')
+    output = output.replace('ഴ', 'la')
+    output = output.replace('എ', 'e')
+    output = output.replace('ഒ', 'o')
+    output = output.replace('ൊ', 'o')
+    output = output.replace('ൾ', '')
+    output = output.replace('~', '')
+
+    return output.lower()
+
+
+def ta_ITRANS(word):
+
+    output = sanscript.transliterate(word, sanscript.TAMIL, sanscript.ITRANS)
+    output = output.replace('ஒ', 'o')
+    output = output.replace('ெ', 'e')
+    output = output.replace('எ', 'e')
+    output = output.replace('ன', 'na')
+    output = output.replace('ழ', 'la')
+    output = output.replace('ொ', 'o')
+    output = output.replace('ற', 'ra')
+    output = output.replace('~', '')
+    output = output.replace(',', '')
+
+    return output.lower()
+
+      
+def te_ITRANS(word):
+
+    output = sanscript.transliterate(word, sanscript.TELUGU, sanscript.ITRANS)
+    output = output.replace('ె', 'e')
+    output = output.replace('ఎ', 'e')
+    output = output.replace('ొ', 'o')
+    output = output.replace('ఒ', 'o')
+
     return output.lower()
 
 
