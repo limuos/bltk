@@ -28,6 +28,8 @@ def hi_ITRANS(word):
     output = sanscript.transliterate(word, sanscript.DEVANAGARI, sanscript.ITRANS)
     output = output.replace('ॉ', 'o')
     output = output.replace('ऑ', 'o')
+    output = output.replace('़', '')
+    output = output.replace('~', '')
 
     return output.lower()
 
