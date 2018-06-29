@@ -390,3 +390,4 @@ isduing
 banknalli
 awaga
 gure
+nataka
